@@ -97,3 +97,20 @@ Native Machine Instructions (Executed by physical CPU)
 - **Q2: How does Java achieve platform independence?**
   - By compiling code into intermediate **bytecode**, which is executed by platform-specific **JVMs**.
 
+# Compile
+javac HelloExecution.java
+
+# Run
+java HelloExecution
+
+# Inspect bytecode
+javap -c HelloExecution
+
+# Inspect class information
+javap HelloExecution
+
+# Show verbose class information
+javap -verbose HelloExecution
+
+# Observe JIT compilation
+java -XX:+PrintCompilation JitDemo
